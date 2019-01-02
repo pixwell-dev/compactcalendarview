@@ -9,13 +9,6 @@ idea {
     }
 }
 
-repositories {
-    google()
-    jcenter()
-    mavenCentral()
-}
-
-
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
@@ -35,7 +28,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation 'androidx.appcompat:appcompat:1.0.2'
     //mockito dependencies
     testImplementation 'junit:junit:4.12'
